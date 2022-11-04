@@ -1,5 +1,11 @@
-$el-bg-color: black;
-$el-bg-opacity: 0.7;
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@400;500&display=swap');
+
+@mixin pointer-on-hover {
+    &:hover {
+        cursor: pointer;
+    }
+}
+$el-bg-color: rgba(0, 0, 0, 0.5);
 
 body {
     display: flex;
@@ -12,17 +18,68 @@ body {
     margin: 0;
     width: 100vw;
     height: 100vh;
+    font-family: 'Raleway', sans-serif;
 }
 
 .header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30vw;
     width: 100vw;
     height: 6rem;
-    background-color: $el-bg-color; opacity: $el-bg-opacity;
+    background-color: $el-bg-color;
+
+    #logo {
+        font-size: 2.7rem;
+        font-weight: 500;
+        padding-left: 1rem;
+        white-space: nowrap;
+        @include pointer-on-hover;
+    }
+    
+    .nav {
+        display: flex;
+        gap: 2.5rem;
+        font-size: 1.7rem;
+        padding-right: 1rem;
+        @include pointer-on-hover;
+    }
 }
 
 #content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     width: 100vw;
     flex-grow: 1;
+
+    #frame {
+        display: flex;
+        flex-direction: column;
+        justify-content: start;
+        align-items: center;
+        gap: 3rem;
+        width: 700px;
+        height: 500px;
+        padding: 1rem;
+        border-radius: 3rem;
+        background-color: $el-bg-color;
+        font-size: 1.4rem;
+        text-align: center;
+        line-height: 2rem;
+
+        :first-child {
+            padding-top: 2rem;
+            font-size: 3.5rem;
+        }
+
+        #smiling-girl {
+            width: 200px;
+            height: auto;
+            border-radius: 200px;
+        }
+    }
 }
 
 .footer {
@@ -33,8 +90,7 @@ body {
     width: 100vw;
     text-align: center;
     font-size: 1rem;
-    font-family: 'Roboto', sans-serif;
-    background-color: $el-bg-color; opacity: $el-bg-opacity;
+    background-color: $el-bg-color;
 }
 
 #github {
