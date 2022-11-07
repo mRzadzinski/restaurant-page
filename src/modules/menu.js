@@ -20,7 +20,7 @@ function renderMenu() {
                             + '<div class="dish">'
                                 + '<img class="dish-image" id="paprika-image" src="" alt="">'
                                 + '<div class="dish-name">Tears of Joy</div>'
-                                + '<div class="dish-description">Savory, vegetable salad with main ingredient: chillies.</div>'
+                                + '<div class="dish-description">Savory, vegetable salad with spicy peppers.</div>'
                                 + '<div class="price">$57</div></div></div>';
 
     const leafImage = document.querySelector('#leaf-image');

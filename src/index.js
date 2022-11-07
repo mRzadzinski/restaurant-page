@@ -1,13 +1,18 @@
 import './style.scss';
 import createTemplateHTML from './modules/templateHTML';
-import createHome from './modules/home';
+import renderHome from './modules/home';
+import renderMenu from './modules/menu';
+import renderContact from './modules/contact';
 
 createTemplateHTML();
-const content = document.querySelector('#content');
+const logo = document.querySelector('#logo');
+const frame = document.querySelector('#frame');
 const home = document.querySelector('#home');
 const menu = document.querySelector('#menu');
 const contact = document.querySelector('#contact');
-export default content;
-createHome();
-home.onclick = () => createHome();
-
+export default frame;
+renderHome();
+logo.onclick = () => renderHome();
+home.onclick = () => renderHome();
+menu.onclick = () => renderMenu();
+contact.onclick = () => renderContact();
