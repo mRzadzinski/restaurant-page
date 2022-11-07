@@ -13,11 +13,10 @@ function renderContact() {
                         + '        <b>Hint:</b><br> <div class="small-font">The ascend is quite steep but it\'s worth it.</div>'
                         + '        </div>'
                         + '    </div>'
-                        + '    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d112679.'
-                        + '    01192371915!2d90.38412875820312!3d28.048333300000003!2m3!1f0!2f0!3f0!3m2!1'
-                        + '    i1024!2i768!4f13.1!3m3!1m2!1s0x375faf63ec471821%3A0x16ad97195adac0e!2sKang'
-                        + '    kar%20P%C3%BCnzum!5e0!3m2!1spl!2spl!4v1667814423586!5m2!1spl!2spl" '
-                        + '    allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>'
+                        + '    <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d32424.559511212265!2'
+                        + '        d90.454167!3d28.048333!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x375faf63ec471821%3A0x16ad97195adac'
+                        + '        0e!2sKangkar%20P%C3%BCnzum!5e1!3m2!1spl!2spl!4v1667822336025!5m2!1spl!2spl" allowfullscreen=""'
+                        + '        loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>'
                         + '</div>';
 }
 
